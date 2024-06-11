@@ -4,5 +4,5 @@ streamlit
 plotly
 plotly.express
 matplotlib
-matplotlib.express
+matplotlib.pyplot
 seaborn
