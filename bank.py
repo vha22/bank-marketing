@@ -6,12 +6,13 @@ import seaborn as sns
 from io import StringIO
 def load_original_data():
     url = 'https://raw.githubusercontent.com/vha22/bank-marketing/main/bank.csv'
-    bank = requests.get(url)
+    response = requests.get(url)
     if response.status_code == 200:
-        return pd.read_csv(StringIO(bank.text))
+        return pd.read_csv(StringIO(response.text))
     else:
         st.error("Failed to load data from GitHub.")
         return None
+bank = pd.read_csv(StringIO(bank.text))
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
 pages=["Contexte du projet","Exploration des données","Analyse des données","Modélisation","Conclusion"]
