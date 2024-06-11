@@ -3,3 +3,6 @@ pandas
 streamlit
 plotly
 plotly.express
+matplotlib
+matplotlib.express
+seaborn
