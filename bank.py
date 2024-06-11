@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
-bank = Path(__file__).parents[1] / 'bank-marketing/bank.csv'
+url = 'https://raw.githubusercontent.com/vha22/bank-marketing/main/bank.csv'
+bank = pd.read_csv(url)
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
 pages=["Contexte du projet","Exploration des données","Analyse des données","Modélisation","Conclusion"]
