@@ -12,6 +12,7 @@ pages=["Contexte du projet","Exploration des données","Analyse des données","M
 page=st.sidebar.radio("Aller à la page:", pages)
 if page==pages[0]:
   st.write("Contexte du projet")
+  st.dataframe(bank.head(10))
   st.write("L’objectif du projet est d’établir un modèle permettant de prédire le succès d’une campagne marketing d’une banque. Concrètement, il s’agit de prédire si suite à la campagne, un client souscrit ou non au produit Dépôt à terme.")
   st.write("Le jeu de données qui nous a été mis à disposition s’appelle “Bank Marketing Dataset”. Ce jeu de données est disponible librement sur Kaggle, mais à la base il vient de la UC Irvine Machine Learning Repository. Ce sont des données liées aux campagnes de marketing direct d’une banque portugaise. Il date de 2012.Il contient 11 162 lignes de données et 17 colonnes.")
   st.write("Dans un premier temps, nous étudierons les différentes variables puis analyserons le dataset et procéderons à un nettoyage des données: doublons, données manquantes, pertinence des différentes variables.")
