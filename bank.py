@@ -3,6 +3,15 @@ import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
+from io import StringIO
+def load_original_data():
+    url = 'https://raw.githubusercontent.com/vha22/bank-marketing/main/bank.csv'
+    response = requests.get(url)
+    if response.status_code == 200:
+        return pd.read_csv(StringIO(response.text))
+    else:
+        st.error("Failed to load data from GitHub.")
+        return None
 bank=pd.read_csv('/Users/vha22/Documents/Github/bank-marketing/main/bank.csv')
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
