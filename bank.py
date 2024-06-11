@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
-bank=pd.read_csv("bank.csv")
+bank=pd.read_csv('/Users/vha22/Documents/Github/bank-marketing/bank.csv')
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
 pages=["Contexte du projet","Exploration des données","Analyse des données","Modélisation","Conclusion"]
