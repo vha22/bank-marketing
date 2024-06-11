@@ -12,7 +12,6 @@ def load_original_data():
     else:
         st.error("Failed to load data from GitHub.")
         return None
-bank=pd.read_csv('/Users/vha22/Documents/Github/bank-marketing/main/bank.csv')
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
 pages=["Contexte du projet","Exploration des données","Analyse des données","Modélisation","Conclusion"]
