@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 
-bank = Path(__file__).parents[1] / 'bank.csv'
+bank = Path(__file__).parents[1] / 'bank-marketing/bank.csv'
 st.title("Bank Marketing Campaign")
 st.sidebar.title("Sommaire")
 pages=["Contexte du projet","Exploration des données","Analyse des données","Modélisation","Conclusion"]
