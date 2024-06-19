@@ -36,6 +36,8 @@ elif page==pages[1]:
   liste_variable = pd.read_csv(url2, sep =";", index = false)
   st.write(liste_variable)
   st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
-  if st.checkbox("Nombre de doublons"):
+  if st.checkbox("Nombre de doublons :"):
     st.dataframe(bank.duplicated())
-  if st.checkbox("Nombre de valeurs manquantes :")
+  if st.checkbox("Nombre de valeurs manquantes :"):
+    st.dataframe(bank.isna().sum())
+  st.write("Dans la partie suivante, nous allons explorer les données de façon plus approfondie à travers de la datavisualisation.")
