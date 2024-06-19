@@ -38,4 +38,4 @@ elif page==pages[1]:
   st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
   if st.checkbox("Nombre de doublons"):
     st.dataframe(bank.duplicated())
-  if st.checkbox("Nombre de valeurs manquantes"):
+  if st.checkbox("Nombre de valeurs manquantes :")
