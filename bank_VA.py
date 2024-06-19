@@ -35,7 +35,7 @@ elif page==pages[1]:
   url2 = 'https://raw.githubusercontent.com/sdrcr74/bank_nov23/main/Liste%20variable.csv'
   liste_variable = pd.read_csv(url2, sep =";", index = false)
   st.write(liste_variable)
-  st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :
+  st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
   if st.checkbox("Nombre de doublons"):
     st.dataframe(bank.duplicated())
   if st.checkbox("Nombre de valeurs manquantes"):
