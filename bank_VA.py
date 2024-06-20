@@ -33,7 +33,7 @@ elif page==pages[1]:
   st.markdown("- Dimension : 11 162 lignes & 17 colonnes (16 variables explicatives & 1 variable cible")
   st.markdown("- Définition des variables :")
   url2 = 'https://raw.githubusercontent.com/vha22/bank-marketing/main/Liste%20variable.csv'
-  liste_variable = pd.read_csv(url2, sep =";")
+  liste_variable = pd.read_csv(url2, sep = None)
   st.write(liste_variable)
   st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
   if st.checkbox("Nombre de doublons :"):
