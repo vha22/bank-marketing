@@ -34,7 +34,7 @@ elif page==pages[1]:
   st.markdown("- Définition des variables :")
   url2 = 'https://raw.githubusercontent.com/vha22/bank-marketing/main/Liste%20variable.csv'
   liste_variable = pd.read_csv(url2, sep = None)
-  st.write(liste_variable)
+  st.dataframe(liste_variable)
   st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
   if st.checkbox("Nombre de doublons :"):
     st.dataframe(bank.duplicated().sum())
