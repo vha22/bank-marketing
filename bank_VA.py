@@ -37,7 +37,7 @@ elif page==pages[1]:
   st.dataframe(liste_variable)
   st.markdown("- Qualité de données : à première vue, la base de données nous semble propre :")
   if st.checkbox("Nombre de doublons :"):
-    st.dataframe(bank.duplicated().sum())
+    st.write(bank.duplicated().sum())
   if st.checkbox("Nombre de valeurs manquantes :"):
-    st.dataframe(bank.isna().any(axis = 0))
+    st.write(bank.isna().any(axis = 0))
   st.write("Dans la partie suivante, nous allons explorer les données de façon plus approfondie à travers de la datavisualisation.")
