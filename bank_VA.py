@@ -41,3 +41,9 @@ elif page==pages[1]:
   if st.checkbox("Nombre de valeurs manquantes :"):
     st.write(bank.isna().any(axis = 0))
   st.write("Dans la partie suivante, nous allons explorer les données de façon plus approfondie à travers de la datavisualisation.")
+
+elif page==pages[5]:
+  st.subheader("Conclusion")
+  st.markdown("- Ce rapport offre à une entreprise des perspectives précieuses sur les schémas comportementaux des clients et les déterminants influençant leurs choix, offrant ainsi la possibilité d'optimiser les stratégies de marketing et de prendre des décisions stratégiques mieux éclairées.")
+  st.markdown("- Notre travail a permis d'identifier les variables les plus significatives tout en surmontant des obstacles tels que la signification des variables.")
+  st.markdown("- Des améliorations supplémentaires auraient pu être envisagées afin de peaufiner davantage notre modèle (analyse plus approfondie de l'importance des variables, application de techniques avancées de réduction de la dimensionnalité)")      
